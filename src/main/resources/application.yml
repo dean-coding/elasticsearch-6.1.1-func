@@ -9,3 +9,12 @@ spring:
 #          data: ./elasticsearch/data
       repositories:
         enabled: true
+
+#配置日志
+logging:
+  #配置日志文件路径
+  path: D:\logs
+  level:
+    com.example.es: debug #不同目录下的日志可配置不同级别
+    org.springfromework.web: info
+    org.hibernate: error
